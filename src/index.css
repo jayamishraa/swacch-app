@@ -1,0 +1,55 @@
+body{
+  background-color: #b4b4b3;
+  margin: 0%;
+}
+.header{
+  padding: 20px;
+  width: 99%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #213555;
+  position: fixed;
+}
+.sidebar{
+  margin-top: 50px;
+  background-color: #213555;
+  width: 200px;
+  height: 680px;
+  padding: 10px;
+  position: fixed;
+  /* left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
+  transition: 350ms;
+  z-index: 10; */
+}
+.sidebar > .sidebar-elements{
+  margin-top: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sidebar-elements > button{
+  padding: 10px;
+}
+.problems{
+  margin-top: 100px;
+}
+.problems-tile{
+  margin-top: 10px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  border: 2px solid #4F709C;
+  background-color: #fafaface;
+}
+.solved{
+  background-color: green;
+}
+.ignore{
+  background-color: red;
+}
+.dynamic-container{
+  padding: 10px;
+  margin-left: 220px;
+}
