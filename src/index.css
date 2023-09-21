@@ -1,22 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Inter:wght@400;600;700&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Inter:wght@400;600;700&family=Montserrat:wght@300&family=Poppins:wght@300&family=Red+Hat+Display&display=swap');
+
 body{
-  background-color: #b4b4b3;
+  background-color: #d1d6d8;
   margin: 0%;
 }
 .header{
-  padding: 20px;
-  width: 99%;
+  margin-left: 210px;
+  padding: 18px;
+  width: 84vw;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #213555;
+  background-color: #266085;
   position: fixed;
 }
+.header-left{
+  display: flex;
+}
+.header-left div{
+  margin: 10px;
+  font-size: 25px;
+  color: #fafafa;
+}
+.header button{
+  color: #fafafa;
+  font-size: 25px;
+  background-color: #266085;
+  border: none;
+}
+.header-right{
+  color: #fafafa;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notification{
+  position: relative;
+}
+.notification > span{
+  font-size: 18px;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  border-radius: 50%;
+}
 .sidebar{
-  margin-top: 50px;
-  background-color: #213555;
+  color: #fafafa;
+  background-color: #212a32;
   width: 200px;
-  height: 680px;
+  height: 100%;
   padding: 10px;
   position: fixed;
   /* left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
@@ -24,32 +65,87 @@ body{
   z-index: 10; */
 }
 .sidebar > .sidebar-elements{
-  margin-top: 300px;
+  margin-left: 10px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  justify-content: center;
+  gap: 20px;
 }
-.sidebar-elements > button{
-  padding: 10px;
+.sidebar-elements i{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  color: #b4bdbf;
+  padding: 15px;
+  font-size: larger;
+}
+.sidebar-elements i div{
+  font-family: Montserrat;
 }
 .problems{
-  margin-top: 100px;
+  padding: 10px;
 }
 .problems-tile{
   margin-top: 10px;
+  font-size: larger;
   padding: 20px;
   display: grid;
-  grid-template-columns: 2fr repeat(3, 1fr);
+  grid-template-columns: 2fr 1fr 2fr 1fr;
   border: 2px solid #4F709C;
   background-color: #fafaface;
+  align-items: center;
 }
 .solved{
-  background-color: green;
+  background-color: #009154;
 }
 .ignore{
-  background-color: red;
+  background-color: #e75332;
 }
 .dynamic-container{
   padding: 10px;
   margin-left: 220px;
+}
+.profile{
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  font-family: Red Hat Display;
+}
+.user-img, .user-img-header{
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 5px
+}
+.user-img-header{
+  height: 35px;
+  width: 35px;
+  margin: 10px;
+}
+.problem-box-main{
+  margin-top: 80px;
+}
+.problem-box{ 
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.assigned-problem{
+  background-color: #00b1f2;
+}
+.total-problem{
+  background-color: #e18c0b;
+}
+.problem-box > div{
+  font-size: 20px;
+  height: 200px;
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.problems-tile-button > button{
+  padding: 5px;
+  margin: 5px;
 }

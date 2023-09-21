@@ -1,4 +1,4 @@
-import Problems from "./components/Problems";
+import DashboardPage from "./pages/DashboardPage";
 import Main from "./pages/Main";
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="swach-app" element={<Main />}>
-          <Route index element={<Problems />} />
+          <Route index element={<DashboardPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
