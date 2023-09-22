@@ -3,20 +3,20 @@ import { useState } from 'react';
 import Sidebar from '../components/Sidebar'
 import Header from '../components/Header'
 import { Outlet } from 'react-router-dom';
-import Problems from '../components/Problems';
+import Footer from '../components/Footer';
 
 function Main() {
-
-  // const [sidebar, setSidebar] = useState(false);
-  // const handleSidebar = (e) => {val => setSidebar(!val)}
+  const [isExpanded, setIsExpanded] = useState(true);
+  const handleSidebar = () => {setIsExpanded(val => !val)}
 
   return (
     <div className='main'>
-      <Header />
-      <Sidebar />
-      <div className="dynamic-container">
+      <Header handleSidebar={handleSidebar}/>
+      {isExpanded && <Sidebar />}
+      <div className={isExpanded ? "dynamic-container-shrinked" : "dynamic-container"}>
         <Outlet />
       </div>
+      <Footer />
     </div>
   )
 }

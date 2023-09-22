@@ -1,11 +1,10 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
 
-function Header() { 
+function Header(props) { 
   return (
     <div className="header">
       <div className='header-left'>
-        <button class="fa-solid fa-bars" />
+        <button class="fa-solid fa-bars" onClick={props.handleSidebar}/>
         <div>Swach-App</div>
       </div>
       <div className="header-right">

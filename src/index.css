@@ -2,36 +2,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Inter:wght@400;600;700&family=Montserrat:wght@300&family=Poppins:wght@300&family=Red+Hat+Display&display=swap');
 
 body{
-  background-color: #d1d6d8;
-  margin: 0%;
+  background-color: #e7f4eb;
+  margin: 0;
+  overflow-x: hidden;
 }
 .header{
-  margin-left: 210px;
   padding: 18px;
-  width: 84vw;
+  width: 98%;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #266085;
+  background-color: #f9fbfe;
   position: fixed;
 }
 .header-left{
   display: flex;
 }
 .header-left div{
-  margin: 10px;
   font-size: 25px;
-  color: #fafafa;
+  color: #137e48;
 }
 .header button{
-  color: #fafafa;
+  color: #999a9b;
   font-size: 25px;
-  background-color: #266085;
+  background-color: #26618500;
   border: none;
 }
 .header-right{
-  color: #fafafa;
+  color: #999a9b;
   font-size: 25px;
   display: flex;
   justify-content: center;
@@ -41,6 +40,7 @@ body{
   position: relative;
 }
 .notification > span{
+  color: #fafafa;
   font-size: 18px;
   height: 20px;
   width: 20px;
@@ -54,17 +54,17 @@ body{
   border-radius: 50%;
 }
 .sidebar{
+  margin-top: 76px;
   color: #fafafa;
-  background-color: #212a32;
-  width: 200px;
+  /* background-color: #19b266; */
+  background-color: #137e48;
+  width: 250px;
   height: 100%;
   padding: 10px;
   position: fixed;
-  /* left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
-  transition: 350ms;
-  z-index: 10; */
 }
 .sidebar > .sidebar-elements{
+  transition: all 0.25s;
   margin-left: 10px;
   margin-top: 50px;
   display: flex;
@@ -75,7 +75,7 @@ body{
 .sidebar-elements i{
   display: grid;
   grid-template-columns: 1fr 3fr;
-  color: #b4bdbf;
+  color: #fafafa;
   padding: 15px;
   font-size: larger;
 }
@@ -83,27 +83,40 @@ body{
   font-family: Montserrat;
 }
 .problems{
-  padding: 10px;
+  padding: 20px;
+}
+.problems h1 button{
+  font-size: 20px;
+  border: none;
 }
 .problems-tile{
   margin-top: 10px;
-  font-size: larger;
-  padding: 20px;
+  font-size: large;
+  padding: 10px;
   display: grid;
-  grid-template-columns: 2fr 1fr 2fr 1fr;
-  border: 2px solid #4F709C;
-  background-color: #fafaface;
+  grid-template-columns: 1fr 2fr 3fr 0.7fr;
   align-items: center;
+  border-radius: 10px;
 }
-.solved{
+.problems-tile:hover{
+  background-color: #137e48a0;
+}
+hr{
+  height: 1px;
   background-color: #009154;
 }
-.ignore{
+.green{
+  background-color: #009154;
+}
+.red{
   background-color: #e75332;
 }
 .dynamic-container{
-  padding: 10px;
-  margin-left: 220px;
+  padding-top: 76px;
+}
+.dynamic-container-shrinked{
+  padding-top: 76px;
+  margin-left: 270px;
 }
 .profile{
   display: flex;
@@ -116,36 +129,106 @@ body{
   width: 50px;
   object-fit: cover;
   border-radius: 50%;
-  margin: 5px
+  margin: 5px;
 }
 .user-img-header{
   height: 35px;
   width: 35px;
   margin: 10px;
 }
+
 .problem-box-main{
-  margin-top: 80px;
+  padding: 10px;
 }
+/* .slider{
+  margin-left: 25px;
+} */
 .problem-box{ 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
-.assigned-problem{
+.blue{
   background-color: #00b1f2;
 }
-.total-problem{
+.orange{
   background-color: #e18c0b;
 }
 .problem-box > div{
-  font-size: 20px;
-  height: 200px;
-  display: flex;
+  background-color: #fafafa;
+  font-size: 15px;
+  height: 150px;
   margin: 10px;
-  justify-content: center;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  box-shadow: 5px 5px #999a9b;
+}
+.problem-box > div > h2{
+  display: flex;
   align-items: center;
-  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin-top: 0%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.problem-box > div > h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .problems-tile-button > button{
   padding: 5px;
   margin: 5px;
+  border: none;
+  border-radius: 5px;
+}
+.img-container{
+  background-image: linear-gradient(
+      rgba(6, 6, 6, 0.514)
+      ,rgba(6, 6, 6, 0.514)
+    ),url('./swach-img.jpg');
+    height: 90vh;
+    top: 100px;
+    width: 100vw;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fafafa;
+}
+/* .img-container > div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+} */
+.img-container > div > h1{
+  color: #23f450;  
+}
+.dashboard-container-bottom{
+  margin: 20px;
+}
+.footer{
+  background-color: rgb(15, 15, 50);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0%;
+}
+.analytics{
+  height: 100vh;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 30px;
+}
+.analytics div{
+  border-radius: 20px;
+  border: 1px solid #009155a4;
+  background-color: #fafafad0;
 }

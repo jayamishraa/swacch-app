@@ -1,7 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 function Sidebar() {
+  const linkStyle = {
+    textDecoration: 'none'
+  }
 
   return (
     <div className="sidebar">
@@ -12,22 +16,22 @@ function Sidebar() {
         </div>
       </div>
       <div className="sidebar-elements">
-          <Link to="/swach-app">
+          <Link to="/" style={linkStyle}>
             <i class="fa-solid fa-house">
               <div>Dashboard</div>
             </i>
           </Link>
-          <Link>
+          <Link to="problems" style={linkStyle}>
             <i class="fa-solid fa-user">
-              <div>Account</div>
+              <div>Problems</div>
             </i>
           </Link>
-          <Link>
+          <Link to="analytics" style={linkStyle}>
             <i class="fa-solid fa-chart-simple">
               <div>Analytics</div>
             </i>
           </Link>
-          <Link>
+          <Link style={linkStyle}>
             <i class="fa-solid fa-bell">
               <div>Notifications</div>
             </i>
