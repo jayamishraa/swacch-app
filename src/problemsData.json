@@ -3,7 +3,11 @@
         "img": "",
         "name": "Alex 1",
         "date": "",
-        "address": "Houston"
+        "address": "Houston",
+        "status": "",
+        "supervisor": "",
+        "completion-img": "",
+        "completion-date-and-time": ""
 	},
     {   "id": 2,
         "img": "",

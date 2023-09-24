@@ -3,8 +3,10 @@ import React from 'react'
 function ProblemBox() {
   return (
       <div className='problem-box-main'>
-        <h3>lorem</h3>
-        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras bibendum venenatis imperdiet. Nunc vel neque id nulla faucibus ornare ut in orci. Vestibulum velit sapien, porttitor ac libero sit amet, cursus rhoncus augue. Duis efficitur accumsan neque nec ultrices. </h4>
+        <div style={{display: 'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', fontSize: '20px', marginTop: '-30px'}}>
+          <h2>Let's make this country</h2>
+          <h1 style={{color: 'green'}}>CLEANER & GREENER</h1>
+        </div>
         <h1>Dashboard</h1>
         <div className='problem-box'>
           <div>

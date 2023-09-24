@@ -15,6 +15,7 @@ body{
   justify-content: space-between;
   background-color: #f9fbfe;
   position: fixed;
+  z-index: 1000;
 }
 .header-left{
   display: flex;
@@ -58,10 +59,15 @@ body{
   color: #fafafa;
   /* background-color: #19b266; */
   background-color: #137e48;
-  width: 250px;
+  width: 0px;
+  transition: width 0.3s ease;
   height: 100%;
   padding: 10px;
   position: fixed;
+}
+.animation{
+  width: 250px;
+  
 }
 .sidebar > .sidebar-elements{
   transition: all 0.25s;
@@ -83,18 +89,18 @@ body{
   font-family: Montserrat;
 }
 .problems{
-  padding: 20px;
+  padding: 10px;
 }
 .problems h1 button{
-  font-size: 20px;
+  font-size: 10px;
   border: none;
 }
 .problems-tile{
   margin-top: 10px;
-  font-size: large;
-  padding: 10px;
+  font-size: 17px;
+  padding: 20px;
   display: grid;
-  grid-template-columns: 1fr 2fr 3fr 0.7fr;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
   align-items: center;
   border-radius: 10px;
 }
@@ -189,8 +195,6 @@ hr{
       ,rgba(6, 6, 6, 0.514)
     ),url('./swach-img.jpg');
     height: 90vh;
-    top: 100px;
-    width: 100vw;
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -231,4 +235,29 @@ hr{
   border-radius: 20px;
   border: 1px solid #009155a4;
   background-color: #fafafad0;
+}
+.guidelines{
+  margin: 20px;
+  width: 80vw;
+  border: 1px solid #009155a4;
+  background-color: #fafafa;
+}
+.guidelines-list{
+  font-size: 17px;
+  margin: 20px;
+}
+.guidelines-page, .notifications-page{
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.notifications{
+  font-size: 17px;
+  padding: 20px;
+  margin: 20px;
+  width: 77vw;
+  border: 1px solid #009155a4;
+  background-color: #fafafa;
 }
