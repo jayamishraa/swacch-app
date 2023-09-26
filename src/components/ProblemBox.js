@@ -22,7 +22,7 @@ function ProblemBox() {
             <h1>20</h1>
           </div>
           <div>
-            <h2  className='red'>xyz Problems</h2>
+            <h2  className='red'>Unsolved Problems</h2>
             <h1>30</h1>
           </div>
       </div>

@@ -12,10 +12,10 @@ function ProblemsPage() {
     return (
         <div>
             <Problems handleOpen={ handleOpen }/>
-            <SimpleModal open={ open } setOpen={ setOpen }/>
+            <SimpleModal open={ open } setOpen={ setOpen } />
             <Outlet />
-        </div>
-    )
-}
+            </div>
+            )
+        }
 
 export default ProblemsPage

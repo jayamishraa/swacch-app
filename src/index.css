@@ -16,6 +16,8 @@ body{
   background-color: #f9fbfe;
   position: fixed;
   z-index: 1000;
+  box-shadow: 0px 0px 10px grey;
+
 }
 .header-left{
   display: flex;
@@ -64,6 +66,7 @@ body{
   height: 100%;
   padding: 10px;
   position: fixed;
+  box-shadow: 0px 0px 10px grey;
 }
 .animation{
   width: 250px;
@@ -100,9 +103,10 @@ body{
   font-size: 17px;
   padding: 20px;
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-columns: 0.3fr 1fr 2fr 0.8fr;
   align-items: center;
   border-radius: 10px;
+  background-color: #fafafa;
 }
 .problems-tile:hover{
   background-color: #137e48a0;
@@ -237,7 +241,7 @@ hr{
   background-color: #fafafad0;
 }
 .guidelines{
-  margin: 20px;
+  margin-top: 20px;
   width: 80vw;
   border: 1px solid #009155a4;
   background-color: #fafafa;
@@ -256,8 +260,35 @@ hr{
 .notifications{
   font-size: 17px;
   padding: 20px;
-  margin: 20px;
+  margin-top: 20px;
   width: 77vw;
   border: 1px solid #009155a4;
   background-color: #fafafa;
+
+}
+.dropdown{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 7px;
+  top: 87px;
+  height: 150px;
+  width: 150px;
+  background-color: #fafafa;
+  z-index: 1;
+  box-shadow: 0px 0px 10px grey;
+}
+.dropdown > button{
+  width: 100px;
+  padding: 4px;
+  margin: 2px;
+  border: none;
+  background-color: transparent;
+}
+.dropdown > button:hover{
+  background-color: #009154;
+  color: #fafafa;
+  cursor: pointer;
 }
