@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Inter:wght@400;600;700&family=Montserrat:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Inter:wght@400;600;700&family=Montserrat:wght@300&family=Poppins:wght@300&family=Red+Hat+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Inter:wght@400;600;700&family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Inter:wght@400;600;700&family=Montserrat:wght@300&family=Poppins:wght@300&family=Red+Hat+Display&display=swap");
 
-body{
+body {
   background-color: #e7f4eb;
   margin: 0;
   overflow-x: hidden;
 }
-.header{
+.header {
   padding: 18px;
   width: 98%;
   height: 40px;
@@ -15,34 +15,33 @@ body{
   justify-content: space-between;
   background-color: #f9fbfe;
   position: fixed;
-  z-index: 1000;
+  z-index: 2;
   box-shadow: 0px 0px 10px grey;
-
 }
-.header-left{
+.header-left {
   display: flex;
 }
-.header-left div{
+.header-left div {
   font-size: 25px;
   color: #137e48;
 }
-.header button{
+.header button {
   color: #999a9b;
   font-size: 25px;
   background-color: #26618500;
   border: none;
 }
-.header-right{
+.header-right {
   color: #999a9b;
   font-size: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.notification{
+.notification {
   position: relative;
 }
-.notification > span{
+.notification > span {
   color: #fafafa;
   font-size: 18px;
   height: 20px;
@@ -56,7 +55,7 @@ body{
   background-color: red;
   border-radius: 50%;
 }
-.sidebar{
+.sidebar {
   margin-top: 76px;
   color: #fafafa;
   /* background-color: #19b266; */
@@ -67,12 +66,12 @@ body{
   padding: 10px;
   position: fixed;
   box-shadow: 0px 0px 10px grey;
+  z-index: 100;
 }
-.animation{
+.animation {
   width: 250px;
-  
 }
-.sidebar > .sidebar-elements{
+.sidebar > .sidebar-elements {
   transition: all 0.25s;
   margin-left: 10px;
   margin-top: 50px;
@@ -81,89 +80,92 @@ body{
   justify-content: center;
   gap: 20px;
 }
-.sidebar-elements i{
+.sidebar-elements i {
   display: grid;
   grid-template-columns: 1fr 3fr;
   color: #fafafa;
   padding: 15px;
   font-size: larger;
 }
-.sidebar-elements i div{
+.sidebar-elements i div {
   font-family: Montserrat;
 }
-.problems{
-  padding: 10px;
+.problems {
+  padding-left: 70px;
+  padding-bottom: 70px;
+  padding-right: 70px;
 }
-.problems h1 button{
+.problems h1 button {
   font-size: 10px;
   border: none;
 }
-.problems-tile{
-  margin-top: 10px;
+.problems-tile {
+  margin-top: 20px;
   font-size: 17px;
-  padding: 20px;
+  padding: 10px;
   display: grid;
-  grid-template-columns: 0.3fr 1fr 2fr 0.8fr;
+  grid-template-columns: 0.2fr 1fr 2fr 0.2fr;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 50px;
   background-color: #fafafa;
 }
-.problems-tile:hover{
-  background-color: #137e48a0;
+.problems-tile:hover {
+  background-color: #137e4827;
 }
-hr{
+hr {
   height: 1px;
   background-color: #009154;
 }
-.green{
+.green {
   background-color: #009154;
 }
-.red{
+.red {
   background-color: #e75332;
 }
-.dynamic-container{
+.dynamic-container {
   padding-top: 76px;
 }
-.dynamic-container-shrinked{
+.dynamic-container-shrinked {
   padding-top: 76px;
   margin-left: 270px;
 }
-.profile{
+.profile {
   display: flex;
-  margin: 10px;
+  padding-right: 10px;
   align-items: center;
   font-family: Red Hat Display;
 }
-.user-img, .user-img-header{
+.user-img,
+.user-img-header {
   height: 50px;
   width: 50px;
   object-fit: cover;
   border-radius: 50%;
   margin: 5px;
 }
-.user-img-header{
+.user-img-header {
   height: 35px;
   width: 35px;
   margin: 10px;
 }
 
-.problem-box-main{
+.problem-box-main {
   padding: 10px;
 }
 /* .slider{
   margin-left: 25px;
 } */
-.problem-box{ 
+.problem-box {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
-.blue{
+.blue {
   background-color: #00b1f2;
 }
-.orange{
+.orange {
   background-color: #e18c0b;
 }
-.problem-box > div{
+.problem-box > div {
   background-color: #fafafa;
   font-size: 15px;
   height: 150px;
@@ -173,7 +175,7 @@ hr{
   grid-template-rows: 1fr 1fr;
   box-shadow: 5px 5px #999a9b;
 }
-.problem-box > div > h2{
+.problem-box > div > h2 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -182,112 +184,124 @@ hr{
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.problem-box > div > h1{
+.problem-box > div > h1 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.problems-tile-button > button{
+.problems-tile-button > button {
   padding: 5px;
   margin: 5px;
   border: none;
   border-radius: 5px;
 }
-.img-container{
-  background-image: linear-gradient(
-      rgba(6, 6, 6, 0.514)
-      ,rgba(6, 6, 6, 0.514)
-    ),url('./swach-img.jpg');
-    height: 90vh;
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    color: #fafafa;
+.img-container {
+  background-image: linear-gradient(rgba(6, 6, 6, 0.514), rgba(6, 6, 6, 0.514)),
+    url("./swach-img.jpg");
+  height: 90vh;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #fafafa;
 }
 /* .img-container > div{
   position: absolute;
   top: 50%;
   left: 50%;
 } */
-.img-container > div > h1{
-  color: #23f450;  
+.img-container > div > h1 {
+  color: #23f450;
 }
-.dashboard-container-bottom{
+.dashboard-container-bottom {
   margin: 20px;
 }
-.footer{
+.footer {
   background-color: rgb(15, 15, 50);
   height: 40px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0%;
+  bottom: 0;
+  position: fixed;
+  z-index: 1;
 }
-.analytics{
+.analytics {
   height: 100vh;
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(4, 1fr);
   margin: 30px;
 }
-.analytics div{
+.analytics div {
   border-radius: 20px;
   border: 1px solid #009155a4;
   background-color: #fafafad0;
 }
-.guidelines{
+.guidelines {
   margin-top: 20px;
   width: 80vw;
-  border: 1px solid #009155a4;
+  height: 90px;
+  border-radius: 50px;
   background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
 }
-.guidelines-list{
-  font-size: 17px;
+.guidelines-list {
+  font-size: 14px;
   margin: 20px;
 }
-.guidelines-page, .notifications-page{
+.guidelines-page{
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  
+}
+.notifications-page {
   margin: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.notifications{
+.notifications {
   font-size: 17px;
   padding: 20px;
   margin-top: 20px;
   width: 77vw;
   border: 1px solid #009155a4;
   background-color: #fafafa;
-
 }
-.dropdown{
+.dropdown {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: fixed;
   right: 7px;
-  top: 87px;
+  top: 60px;
   height: 150px;
-  width: 150px;
+  width:100px;
   background-color: #fafafa;
-  z-index: 1;
+  z-index: 3;
   box-shadow: 0px 0px 10px grey;
+  border: 1px solid #009154;
 }
-.dropdown > button{
-  width: 100px;
+.dropdown > button {
+  width: 80px;
   padding: 4px;
   margin: 2px;
   border: none;
   background-color: transparent;
 }
-.dropdown > button:hover{
+.dropdown > button:hover {
   background-color: #009154;
   color: #fafafa;
   cursor: pointer;

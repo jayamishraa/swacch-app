@@ -32,19 +32,19 @@ function Sidebar() {
             <div>Problems</div>
           </i>
           </Link>
-          <Link to="analytics" style={linkStyle}>
-            <i class="fa-solid fa-chart-simple">
-              <div>Analytics</div>
-            </i>
-          </Link>
           <Link to='guidelines' style={linkStyle}>
-            <i class="fa-solid fa-scroll">
-              <div>Guidelines</div>
-            </i>
+          <i class="fa-solid fa-scroll">
+          <div>Guidelines</div>
+          </i>
           </Link>
-      </div>
-    </div>
-  )
-}
-
+          </div>
+          </div>
+          )
+        }
+        
+        // <Link to="analytics" style={linkStyle}>
+        //   <i class="fa-solid fa-chart-simple">
+        //     <div>Analytics</div>
+        //   </i>
+        // </Link>
 export default Sidebar
